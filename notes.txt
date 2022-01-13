@@ -1,0 +1,23 @@
+Source: https://www.youtube.com/watch?v=93p3LxR9xfM
+Purpose of Redux:
+- state management library
+- state is stored inside a central repo. A javascript object called "Store"
+- data is updated from the Store
+
+Pros:
+- makes state changes predictable
+- centralizes state
+- can easily debug (redux chrome dev tool)
+- perserve page stage
+- implement undo/redo 
+- many of add-ons
+
+Cons:
+- complexity 
+- verbosity. boilerplate needed 
+
+When Not to Use: 
+- tight budget
+- small to med size app
+- simple ui/data flow
+- static data
