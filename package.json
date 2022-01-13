@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "description": "Redux Starter Project",
   "main": "index.js",
+  "type": "module",
+  "exports": "./index.js",
   "scripts": {
     "start": "webpack-dev-server --config ./webpack.config.js"
   },
@@ -15,6 +17,7 @@
     "webpack-dev-server": "3.10.3"
   },
   "dependencies": {
+    "esm": "^3.2.25",
     "lodash": "^4.17.21"
   }
 }
