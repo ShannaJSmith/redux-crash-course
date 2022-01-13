@@ -70,3 +70,7 @@ Define the Actions:
 
 Create Reducer:
 
+Redux WorkFlow:
+- Dispatch action -> store calls reducer with current state and action
+- based on action we get the new state
+

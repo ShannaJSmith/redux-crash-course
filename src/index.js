@@ -30,3 +30,7 @@ store.dispatch({
 })
 
 console.log("store", store.getState());
+
+// dispatch internal code:
+// state = reducer(state, action)
+// notify the subscribers
