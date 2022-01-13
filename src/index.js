@@ -1,4 +1,6 @@
 import store from './store';
+import * as actions from './actionTypes';
+
 
 // function gets called everytime the state of store changes
 // UI should subscribed so they get notified when the state of store changes
@@ -13,7 +15,7 @@ store.subscribe(() => {
 
 //dispatch action for adding bug
 store.dispatch({
-  type: "ADD_BUG",
+  type: actions.ADD_BUG,
   payload: {
     description: "Bug1"
   }
@@ -23,7 +25,7 @@ store.dispatch({
 
 //dispatch action for removing bug
 store.dispatch({
-  type: "REMOVE_BUG",
+  type: actions.REMOVE_BUG,
   payload: {
     id: 1
   }
