@@ -21,3 +21,18 @@ When Not to Use:
 - small to med size app
 - simple ui/data flow
 - static data
+
+Reducer Function:
+function reducer(store, action) {
+  const updated = {...store};
+}
+- a function that takes current instance of store and returns updated store
+- action (aka event). plain objects that describes what happened
+- reducer is like an event handler. pure functions
+
+Steps to build Redux:
+- design the store
+- define the actions
+- create reducer
+- set up the store
+
