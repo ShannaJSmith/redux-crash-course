@@ -2,7 +2,7 @@ Source: Programming with Mosh - https://www.youtube.com/watch?v=93p3LxR9xfM
 Purpose of Redux:
 - state management library
 - state is stored inside a central repo. A javascript object called "Store"
-- data is updated from the Store
+- data is updated from the Store (single source of truth)
 
 Pros:
 - makes state changes predictable
