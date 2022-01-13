@@ -2,7 +2,7 @@
 let lastId = 0;
 
 // purpose of reducer is to return new state based on the action:
-function reducer(state = [], action) {
+export default function reducer(state = [], action) {
   if (action.type === 'ADD_BUG')
     // return new state
     return [
@@ -11,7 +11,7 @@ function reducer(state = [], action) {
       {
         id: ++lastId, // every time we add a bug we will increment the id
         description: action.payload.description,
-        resolved: false,
+        resolved: false
       },
     ];
   else if (action.type === 'REMOVE_BUG')
