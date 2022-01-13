@@ -1,5 +1,5 @@
 import store from './store';
-import * as actions from './actionTypes';
+import { bugAdded } from './actions';
 
 
 // function gets called everytime the state of store changes
@@ -14,12 +14,7 @@ store.subscribe(() => {
 // })
 
 //dispatch action for adding bug
-store.dispatch({
-  type: actions.ADD_BUG,
-  payload: {
-    description: "Bug1"
-  }
-});
+store.dispatch(bugAdded("Bug1"));
 
 // unsubscribe(); <- only one msg will log now
 
