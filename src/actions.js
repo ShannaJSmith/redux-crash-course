@@ -14,6 +14,14 @@ import * as actions from './actionTypes'
 export const bugAdded = (description) => ({
   type: actions.ADD_BUG,
   payload: {
-    description: 'Bug1',
+    // description: description, // use shorthand syntax
+    description
+  }
+})
+
+export const bugResolved = id => ({
+  type: actions.RESOLVE_BUG,
+  payload: {
+    id // shorthand
   }
 })
