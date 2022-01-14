@@ -75,11 +75,12 @@ Redux WorkFlow:
 - based on action we get the new state
 
 Immer: <- use instead of spread operator
+- instead of mutating an object directly use produce function from immer
 - npm install Immer
 - import { produce } from 'immer'
 let anime = { title: "Inuyasha" }
-const publish(anime) {
-  return produce(anime, draftAnime => {
+const publish = (anime) => {
+  return produce(anime, draftAnime => { <-anime (first argument) is the initial state. draftAnime is a function that specifies the mutations
     draftAnime.isPublished = true;
   });
 }
