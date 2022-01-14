@@ -1,4 +1,4 @@
-Source: Programming with Mosh - https://www.youtube.com/watch?v=93p3LxR9xfM
+Source: Programming with Mosh - https://www.youtube.com/watch?v=poQXNp9ItL4
 Purpose of Redux:
 - state management library
 - state is stored inside a central repo. A javascript object called "Store"
@@ -74,3 +74,15 @@ Redux WorkFlow:
 - Dispatch action -> store calls reducer with current state and action
 - based on action we get the new state
 
+Immer: <- use instead of spread operator
+- npm install Immer
+- import { produce } from 'immer'
+let anime = { title: "Inuyasha" }
+const publish(anime) {
+  return produce(anime, draftAnime => {
+    draftAnime.isPublished = true;
+  });
+}
+let updated = publish(anime);
+console.log("anime:", anime)
+console.log("updated:", updated)
